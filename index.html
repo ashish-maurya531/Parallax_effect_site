@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>    
+        <a href="#" class="logo">Möön</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars" >
+        <img src="moon.png" id="moon" >
+        <img src="mountains_behind.png" id="mountains_behind" >
+        <h2 id="text">Moon Light</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front" >
+
+    </section>
+    <div class="sec" if="sec">
+        <h2>Transient Lunar Phenomenon </h2>
+        <p>
+            Mysterious Lunar Events: Transient Lunar Phenomena have captured the attention of astronomers 
+            and lunar observers for centuries. These unexplained lunar events encompass a wide range of 
+            phenomena, including changes in brightness, color, and the appearance of temporary features 
+            like bright flashes or glows on the Moon's surface. They have been reported by skilled lunar 
+            observers and even astronauts during their missions to the Moon.
+            Natural or Unnatural Origins: Many TLP occurrences can be attributed to natural causes. For 
+            example, the Moon's surface is covered in a layer of fine dust, and when sunlight strikes it at 
+            a particular angle, it can create the illusion of a glowing or flashing effect. Similarly, outgassing 
+            of lunar gases or the release of underground thermal energy can also contribute to TLP. However,
+            some reports describe events that are challenging to explain naturally, leading to speculation about 
+            possible artificial causes.
+            <br><br>
+            Scientific Investigations: Researchers have been systematically studying TLP to unravel their
+            mysteries. Telescopes, both on Earth and lunar orbiters, have been employed to capture these fleeting 
+            phenomena. Some lunar missions have even focused on investigating TLP, aiming to understand their origins 
+            better. However, the sporadic and unpredictable nature of these events makes them challenging to 
+            study comprehensively.Perpetual Lunar Enigma: Despite advancements in lunar science, Transient Lunar Phenomena remain 
+            a perplexing lunar enigma. While many TLP occurrences can be ascribed to natural processes, 
+            there are still unresolved cases that defy easy explanation. Continued observations and scientific 
+            investigations will be essential to shed more light on these transient lunar events and deepen our 
+            understanding of our celestial neighbor, the Moon.
+            <br><br>
+            Historical Accounts: TLP observations date back centuries, with some of the earliest
+            documented reports coming from famous astronomers like William Herschel. These
+            historical records provide valuable insights into the long-standing nature of these
+            phenomena. Some TLP reports from the past have been confirmed by multiple observers,
+            adding credibility to their existence.
+            Changing Perceptions: Over time, our perception of TLP has evolved. Early astronomers
+            often viewed them with skepticism, attributing them to optical illusions or atmospheric
+            effects. However, as our understanding of lunar geology and the Moon's environment has
+            grown, there's now a greater acceptance that some TLP events have genuine physical
+            causes.
+            <br><br>
+            Geological Implications: TLP events, especially those involving gas emissions or transient
+            surface features, have implications for lunar geology. They hint at the presence of volatile
+            compounds beneath the Moon's surface, such as water ice, which could be valuable for
+            future lunar exploration missions and potential lunar bases.
+            Amateur Observations: While professional astronomers and lunar missions have
+            contributed significantly to TLP research, amateur astronomers and lunar enthusiasts also
+            play a crucial role. Their dedicated observations and reports help create a broader database
+            of TLP events and contribute to our understanding of their distribution and characteristics.
+
+            <br><br>
+            Future Lunar Exploration: As humanity's interest in returning to the Moon intensifies, TLP
+            remains a topic of interest. Understanding these phenomena is not only scientifically
+            intriguing but also relevant for ensuring the safety of future lunar missions and the success
+            of lunar bases. Ongoing and future lunar exploration missions will likely continue to monitor
+            and study TLP to unravel their mysteries and harness their potential benefits.
+            
+
+        <p>
+    </div>
+    <script>
+        let stars=document.getElementById("stars");
+        let moon=document.getElementById("moon");
+        let mountains_behind=document.getElementById("mountains_behind");
+        let text=document.getElementById("text");
+        let btn=document.getElementById("btn");
+        let mountains_front=document.getElementById("mountains_front");
+        let hreader=document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value=window.scrollY;
+            stars.style.left=value*0.25+"px";
+            moon.style.top=value*1.05+"px";
+            mountains_behind.style.top=value* 0.5+"px";
+            mountains_front.style.top=value* 0+"px";
+            text.style.marginRight=value*3+"px";
+            text.style.marginTop=value*1.5+"px";
+            btn.style.marginTop=value*1.5+"px";
+            header.style.top=value*0.5+"px";
+
+
+
+        })
+
+
+    </script>
+</body>
+</html>
